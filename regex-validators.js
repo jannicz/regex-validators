@@ -50,3 +50,14 @@ function isBirthdayValid(day, month, year) {
   }
   return false;
 }
+
+/*
+ * Returns true if date format
+ * - matches iso format, i.e. 2015-08-30
+ * - matches german DIN, i.e. 30.08.2015
+ */
+function isDateValid(date) {
+  if (!date)
+		return false;
+  return /^([0-9]{1,2}\.[0-9]{1,2}\.[0-9]{4})$|^([0-9]{4}-[0-9]{2}-[0-9]{2})$/gm.test(date);
+}
