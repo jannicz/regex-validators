@@ -1,4 +1,10 @@
 /*
+ * Returns true if number contains valid digital place separator
+ */
+function isValidFloat(number) {
+  return /^[+-]?\d+[.,]?\d*$/.test(number);
+}
+/*
  * Returns true if username
  * - has no leading/trailing whitespace
  * - starts with alphanumeric character ^[0-9a-zA-Z]
