@@ -67,3 +67,15 @@ function isDateValid(date) {
 		return false;
   return /^([0-9]{1,2}\.[0-9]{1,2}\.[0-9]{4})$|^([0-9]{4}-[0-9]{2}-[0-9]{2})$/gm.test(date);
 }
+
+/*
+ * Returns true if time format
+ * - matches 24h format, i.e. 18:15, 2:00 etc.
+ * - matches 12h format, i.e. 6:15pm, 12:00am etc
+ */
+function isTimeValid(time) {
+	if (!time)
+		return false;
+  return /^([\d]{1,2}):([\d]{2})[\s]*([ap][m])?.*$/.test(time);
+}
+ 
