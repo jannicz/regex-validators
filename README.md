@@ -1,6 +1,6 @@
 # JavaScript-Regex-Validators
 
-<a href="https://jannicz.github.io/my-regex-validators/">
+<a href="https://jannicz.github.io/regex-validators/">
   <strong>See Validator Demo and Examples</strong>
 </a>
 
